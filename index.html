@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="az">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kitab oxu — Menu</title>
+  <link rel="stylesheet" href="css/style.css?v=7" />
+
+</head>
+<!-- INFO PANEL OVERLAY -->
+<div id="infoOverlay" class="overlay"></div>
+
+<!-- INFO PANEL -->
+<aside id="infoPanel" class="info-panel" aria-hidden="true">
+  <div class="info-header">
+    <div class="info-title">
+      <span class="info-badge">ℹ️</span>
+      <span>Məlumat</span>
+    </div>
+
+    <button class="close-info" aria-label="Bağla">✕</button>
+  </div>
+
+  <div class="info-content">
+
+    <div class="info-card">
+      <div class="info-row">
+        <span class="info-icon">📍</span>
+        <div>
+          <div class="info-label">Ünvan</div>
+          <div class="info-text">
+            Atatürk prospekti 213A <br>
+            <span class="info-muted">(Univemağın qarşısı, icra hakimiyyətin binasının cərgəsi)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="info-row">
+        <span class="info-icon">📞</span>
+        <div>
+          <div class="info-label">Əlaqə nömrəsi</div>
+          <a class="info-link" href="tel:+994519116944">+994 51 911 69 44</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-card">
+      <div class="info-row">
+        <span class="info-icon">📲</span>
+        <div>
+          <div class="info-label">Sosial şəbəkələr</div>
+
+          <div class="socials">
+            <a class="social-pill" href="https://instagram.com/kitab_oxu" target="_blank" rel="noopener">
+              📷 @kitab_oxu
+            </a>
+            <a class="social-pill" href="https://instagram.com/kitab_oxu_coffee_shop" target="_blank" rel="noopener">
+              ☕ @kitab_oxu_coffee_shop
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="info-footer">
+    <div class="madeby">
+      Made by <strong>DeriAke</strong>
+      <a class="madeby-link" href="mailto:musaibayev.infosec@gmail.com">musaibayev.infosec@gmail.com</a>
+    </div>
+  </div>
+</aside>
+
+<body>
+
+  <!-- TOP: logo + search + controls -->
+  <header id="topbar"></header>
+
+
+  <!-- CATEGORIES: coffee/çay və s. -->
+  <nav id="categories"></nav>
+
+  <!-- PRODUCTS AREA -->
+  <main id="products"></main>
+
+  <!-- BOTTOM: cart + total/open -->
+  <footer id="bottombar"></footer>
+
+  <script src="js/app.js?v=7"></script>
+  <!-- Spline Viewer script (1 dəfə olsun) -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@splinetool/viewer@1.12.53/build/spline-viewer.js"></script>
+
+<!-- Bottom-left assistant widget -->
+<div class="spline-assistant" id="splineAssistant" aria-live="polite">
+  <div class="assistant-bubble" id="assistantBubble">
+    <div class="bubble-text" id="bubbleText">Salamlar! 👋</div>
+    <div class="bubble-dots" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div class="assistant-3d">
+  <spline-viewer url="https://prod.spline.design/APTlC9kR3-W64VbJ/scene.splinecode"></spline-viewer>
+
+  <div class="spline-badge-cover" aria-hidden="true">
+    <img src="assets/coffee-badge.png" alt="" />
+  </div>
+</div>
+
+
+</div>
+<audio id="addSound" src="./assets/add.mp3" preload="auto"></audio>
+
+</body>
+<!-- LANGUAGE MODAL -->
+<div id="langOverlay" class="modal-overlay" aria-hidden="true"></div>
+
+<div id="langModal" class="lang-modal" role="dialog" aria-modal="true" aria-labelledby="langTitle">
+  <div class="lang-modal-header">
+    <div class="lang-modal-title" id="langTitle">Dil seçimi</div>
+    <button class="lang-modal-close" id="closeLang" aria-label="Bağla">✕</button>
+  </div>
+
+  <button class="lang-item" type="button">
+    <img src="assets/az-flag.jpeg" alt="Azərbaycan bayrağı" class="lang-item-flag">
+    <span>Azərbaycanca</span>
+  </button>
+</div>
+
+</html>
