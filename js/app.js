@@ -462,10 +462,8 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   // 1-ci dəyişiklik gec olsun ki "Salamlar" bir az qalsın
-  setTimeout(() => {
-    showNext();
-    setInterval(showNext, 4500);
-  }, 2500);
+  showNext();
+  setInterval(showNext, 4500);
 });
 
 (() => {
@@ -590,3 +588,4 @@ function playPopSound(){
 document.querySelectorAll(".plus-btn").forEach(btn=>{
   btn.addEventListener("click", playPopSound);
 });
+
